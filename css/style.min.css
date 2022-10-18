@@ -123,11 +123,9 @@ section {
     background: linear-gradient(to right, #333399, #ff00cc);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .jumbotron h1 {
-    line-height: .9;
+    line-height: .1;
     font-weight: bold;
     display: inline-block;
-    border: 15px solid #fff;
-    padding: 30px;
     font-size: 9rem;
     opacity: 0;
     animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
