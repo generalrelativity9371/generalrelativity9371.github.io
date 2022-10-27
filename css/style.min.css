@@ -760,3 +760,11 @@ section {
 .header-2 {
   padding-top: 75px;
 }
+
+.home-btn {
+  background-color: #8b45e0
+}
+
+.home-btn:hover {
+  background-color: #6c27be
+}
