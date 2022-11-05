@@ -758,7 +758,8 @@ section {
 /*=====  End of RESPONSIVE  ======*/
 
 .header-2 {
-  padding-top: 75px;
+  bottom: 1.25em;
+  position: relative;
 }
 
 .home-btn {
@@ -779,8 +780,8 @@ section {
 
 .jumbotron {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -792,20 +793,27 @@ section {
 .jumbotron {
   transition: all 0.5s;
   -webkit-text-stroke: 4px #d6f4f4;
-  font-variation-settings: "wght" 900, "ital" 1;
   font-size: 15rem;
   text-align: center;
   color: transparent;
-  font-family: "Meta", sans-serif;
-  text-shadow: 10px 10px 0px #07bccc,
-    15px 15px 0px #e601c0,
-    20px 20px 0px #e9019a,
-    25px 25px 0px #f40468,
-    45px 45px 10px #482896;
+  font-family: "Work Sans", sans-serif;
   cursor: pointer;
+  font-variation-settings: "wght" 100, "ital" 0;
+  background-color: white;
+  text-shadow: none;
 }
 
 .jumbotron:hover {
-  font-variation-settings: "wght" 100, "ital" 0;
-  text-shadow: none;
+  font-family: "Meta", sans-serif;
+  font-variation-settings: "wght" 900, "ital" 1;
+  /* text-shadow: 10px 10px 0px #07bccc,
+    15px 15px 0px #e601c0,
+    20px 20px 0px #e9019a,
+    25px 25px 0px #f40468,
+    45px 45px 10px #482896; */
+  text-shadow: 10px 10px 0px #e213d1,
+    15px 15px 0px #c619ca,
+    20px 20px 0px #9126bd,
+    25px 25px 0px #6713e0,
+    45px 45px 10px #4f03df;
 }
