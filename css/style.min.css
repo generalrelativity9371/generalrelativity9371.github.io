@@ -817,3 +817,14 @@ section {
     25px 25px 0px #6713e0,
     45px 45px 10px #4f03df;
 }
+
+.site-nav {
+  position: fixed;
+  z-index: 100;
+  background: transparent;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.active { background-color: rgba(50, 23, 77, 0.8)}
+
