@@ -1,92 +1,20 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>My first three.js app</title>
-		<style>
-			body { margin: 0; }
-		</style>
-	</head>
-	<body>
-		<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
-			<div class="header">
-				<div style = "position:relative; left:200px; top:-152px;">
-					<div class="new2_button">
-					<a
-						href="index.html"
-						class="home-btn inline-block rounded px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-yellow-400"
-					>
-						Home
-					</a>
-					</div>
-				</div>
-				<div style = "position:relative; left:0px; top:-100px;">
-					<div class="mt-4 md:mt-8">
-						<a
-						href="https://www.dalton.org/programs/high-school/curriculum/notable-programs/engineering"
-						class="home-btn inline-block rounded px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-yellow-400"
-						>
-						Our School
-						</a>
-					</div>
-				</div>
-				<div style = "position:relative; left:200px; top:-152px;">
-					<div class="new_button">
-					<a
-						href="team.html"
-						class="home-btn inline-block rounded px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-yellow-400"
-					>
-						Our Team
-					</a>
-					</div>
-				</div>
-				<div style = "position:relative; left:400px; top:-204px;">
-				<div class="new1_button">
-					<a
-					href="outreach.html"
-					class="home-btn inline-block rounded px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-yellow-400"
-					>
-					Outreach Projects
-					</a>
-				</div>
-				<div style = "position:relative; left:250px; top:-52px;">
-					<div class="new2_button">
-					<a
-						href="3d.html"
-						class="home-btn inline-block rounded px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring focus:ring-yellow-400"
-					>
-						Robot
-					</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="js/three.js"></script>
-		<script>
-			const scene = new THREE.Scene();
-			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-
-			const renderer = new THREE.WebGLRenderer();
-			renderer.setSize( window.innerWidth, window.innerHeight );
-			document.body.appendChild( renderer.domElement );
-
-			const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-			const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-			const cube = new THREE.Mesh( geometry, material );
-			scene.add( cube );
-
-			camera.position.z = 5;
-
-			function animate() {
-				requestAnimationFrame( animate );
-
-				cube.rotation.x += 0.01;
-				cube.rotation.y += 0.01;
-
-				renderer.render( scene, camera );
-			};
-
-			animate();
-		</script>
-	</body>
+<html lang="en">
+  <head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+	 
+<!-- 	<script type="text/javascript" src = "PyramidsWireframe.js"></script> -->
+<!-- 	<script src="index.js"></script> -->
+    <h1> 3D Wireframe using p5.js </h1>
+	  <iframe style="width: 1000px; height: 1040px; overflow: hidden;"  scrolling="no" src="https://editor.p5js.org/c24nt/full/jZ5wmH0BD"></iframe>
+	  <p> Robot 3D Model </p>
+	  <a href="index.html"> Back </a>
+  </body>
 </html>
