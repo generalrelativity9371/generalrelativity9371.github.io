@@ -118,6 +118,7 @@
 
         <button
           class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75 md:hidden"
+          onclick="openNav()"
         >
           <span class="sr-only">Toggle menu</span>
           <svg
@@ -135,6 +136,17 @@
             />
           </svg>
         </button>
+
+        <div id="side-nav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="https://www.dalton.org/programs/high-school/curriculum/notable-programs/engineering">About</a>
+          <a href="./team.html">Team</a>
+          <a href="./3d.html">Robot</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./initiatives.html">Initiatives</a>
+          <a href="./livestream.html">Livestream</a>
+        </div>
+
       </div>
     </div>
   </div>
